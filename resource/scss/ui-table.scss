@@ -1,2 +1,48 @@
 @charset 'utf-8';
 @import 'mixin';
+@import 'svg';
+
+.table{
+    &-wrap{
+        width:100%;
+    }
+    &-st{
+        width:100%;
+        tr:first-child{
+            td{
+                border-top:none;
+            }
+        }
+        th, td{
+            font-size:1.2rem;
+            font-weight:400;
+            color:#000;
+            vertical-align:middle;
+        }
+        th{
+            padding:.5rem 0;
+            background-color:#ECF4FB;
+            border-left:1px solid #eee;
+            border-top:1px solid #000;
+            line-height:1.3;
+            &:first-child{
+                border-left:none;
+            }
+        }
+        td{
+            padding:.5rem;
+            border:1px solid #eee;
+            font-size:1.2rem;
+            color:#555;
+            line-height:1.5;
+            letter-spacing:-.03rem;
+            text-align:center;
+            &:first-child{
+                border-left:none;
+            }
+            &:last-child{
+                border-right:none;
+            }
+        }
+    }
+}

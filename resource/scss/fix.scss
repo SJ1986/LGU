@@ -1,0 +1,15 @@
+@charset 'utf-8';
+@import 'mixin';
+
+.m{
+    &l{
+        &-auto{
+            margin-left:auto;
+        }
+    }
+    &r{
+        &-auto{
+            margin-right:auto;
+        }
+    }
+}

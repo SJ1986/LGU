@@ -143,10 +143,10 @@ $n-breakpoint: map-get($n-breakpoints, n-sm);
 
 @mixin pos($p:null, $t:null, $r:null, $b:null, $l:null){
     position:$p;
-    top:$t + px;
-    right:$r + px;
-    bottom:$b + px;
-    left:$l + px;
+    top:$t;
+    right:$r;
+    bottom:$b;
+    left:$l;
 };
 @mixin d-block {
     display:block;
@@ -191,6 +191,9 @@ $n-breakpoint: map-get($n-breakpoints, n-sm);
 }
 @mixin justify-end{
     justify-content:flex-end;
+}
+@mixin justify-between{
+    justify-content:space-between;
 }
 @mixin font($s, $w){
     font: {

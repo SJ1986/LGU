@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resource/css/ux-common.css">
+    <link rel="stylesheet" href="../resource/lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../resource/lib/datetimepicker/bootstrap-datetimepicker.min.css">
+    <title>이재민 관리 시스템 > 식사관리</title>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <section class="header__inner">
+                <article class="btn-wrap mr-auto">
+                    <button type="button" class="btn btn-preview" title="이전 화면으로 이동"></button>
+                </article>
+                <h1 class="page-tit">이재민 관리</h1>
+                <article class="btn-wrap ml-auto">
+                    <button type="button" class="btn btn-sideMenu" title="사이드 메뉴 열기"></button>
+                </article>
+                <article class="sideMenu"></article>
+            </section>
+        </header>
+        <div class="container">
+            <div class="container__inner">
+                <div class="content-wrap">
+                    <section class="content__inner">
+                        <article class="sch-area">
+                            <div class="sch-area__inner">
+                                <form action="" class="sch-form">
+                                    <div class="sch-form-block">
+                                        <label for="" class="sch-form__label">
+                                            이름
+                                            <span class="mark-essential">*</span>
+                                        </label>
+                                        <input type="text" class="sch-form__input" title="이름 입력" />
+                                    </div>
+                                    <div class="sch-form-block">
+                                        <label for="" class="sch-form__label">
+                                            생년월일
+                                            <span class="mark-essential">*</span>
+                                        </label>
+                                        <div class="ui-input ui-input-date">
+                                            <input type="text" class="sch-form__input js-datepicker" value="" title="생년월일" />
+                                        </div>
+                                    </div>
+                                    <div class="sch-form-block">
+                                        <label for="" class="sch-form__label">
+                                            전화번호
+                                        </label>
+                                        <input type="text" class="sch-form__input" title="전화번호 입력" />
+                                    </div>
+                                    <div class="sch-form-block">
+                                        <label for="" class="sch-form__label">
+                                            성별
+                                        </label>
+                                        <select type="text" class="sch-form__select" title="성별 입력">
+                                            <option value="">선택</option>
+                                            <option value="">남</option>
+                                            <option value="">여</option>
+                                        </select>
+                                    </div>
+                                    <div class="sch-form-block">
+                                        <label for="" class="sch-form__label">
+                                            도로명주소
+                                        </label>
+                                        <input type="text" class="sch-form__input" title="도로명주소 입력" />
+                                    </div>
+                                    <div class="sch-form-block">
+                                        <label for="" class="sch-form__label">
+                                            지번주소
+                                        </label>
+                                        <input type="text" class="sch-form__input" title="지번주소 입력" />
+                                    </div>
+                                    <div class="sch-form-block">
+                                        <label for="" class="sch-form__label">
+                                            세대주이름
+                                        </label>
+                                        <input type="text" class="sch-form__input" title="세대주이름 입력" />
+                                    </div>
+                                    <div class="sch-form-block">
+                                        <label for="" class="sch-form__label">
+                                            세대주생년월일
+                                        </label>
+                                        <div class="ui-input ui-input-date">
+                                            <input type="text" class="sch-form__input js-datepicker" value="" title="세대주생년월일" />
+                                        </div>
+                                    </div>
+                                    <div class="sch-form-block">
+                                        <label for="" class="sch-form__label">
+                                            투입구호소
+                                            <span class="mark-essential">*</span>
+                                        </label>
+                                        <select type="text" class="sch-form__select" title="투입구호소 선택">
+                                            <option value="">교동경로당</option>
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                        </select>
+                                    </div>
+                                    <div class="sch-form-block">
+                                        <label for="" class="sch-form__label">
+                                            카드종류
+                                        </label>
+                                        <input type="text" class="sch-form__input" disabled title="카드종류 입력" />
+                                    </div>
+                                    <div class="sch-form-block">
+                                        <label for="" class="sch-form__label">
+                                            카드ID
+                                        </label>
+                                        <input type="text" class="sch-form__input" disabled title="카드ID 입력" />
+                                    </div>
+                                </form>
+                                <div class="btn-wrap">
+                                    <button type="button" class="btn btn-width--regular btn-navy">저장</button>
+                                    <button type="button" class="btn btn-width--regular btn-white">닫기</button>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../resource/lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../resource/lib/jquery/jquery-ui.js"></script>
+    <script src="../resource/lib/datetimepicker/moment.min.js"></script>
+    <script src="../resource/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="../resource/lib/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <script src="../resource/js/common.js"></script>
+    <script src="../resource/js/main.js"></script>
+</body>
+</html>

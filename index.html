@@ -4,11 +4,231 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resource/css/ux-common.css">
+    <link rel="stylesheet" href="resource/lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="resource/lib/datetimepicker/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="resource/lib/simplebar/simplebar.css">
     <title>이재민 관리 시스템</title>
 </head>
 <body>
     <div class="wrap">
-        
+        <header>
+            <section class="header__inner">
+                <article class="btn-wrap mr-auto">
+                    <button type="button" class="btn btn--preview" title="이전 화면으로 이동"></button>
+                </article>
+                <h1 class="page-tit">이재민 관리</h1>
+                <article class="btn-wrap ml-auto">
+                    <button type="button" class="btn btn-sideMenu--open" title="사이드 메뉴 열기"></button>
+                </article>
+            </section>
+        </header>
+        <article class="sideMenu">
+            <div class="sideMenu__inner">
+                <div class="sideMenu__head">
+                    <h2 class="sideMenu-tit">이재민 관리 시스템</h2>
+                    <button type="button" class="btn btn-sideMenu--close" title="사이드메뉴 닫기">
+                        <span></span>
+                    </button>
+                </div>
+                <div class="sideMenu__list">
+                    <div class="sideMenu__item">
+                        <a href="" class="sideMenu__item--01">
+                            이재민 관리
+                        </a>
+                    </div>
+                    <div class="sideMenu__item">
+                        <a href="" class="sideMenu__item--01">
+                            자원봉사자 관리
+                        </a>
+                    </div>
+                    <div class="sideMenu__item">
+                        <a href="" class="sideMenu__item--01">
+                            식사 관리
+                        </a>
+                    </div>
+                    <div class="sideMenu__item">
+                        <a href="" class="sideMenu__item--01">
+                            로그아웃
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div class="container">
+            <div class="container__inner">
+                <div class="content-wrap">
+                    <section class="content__inner">
+                        <article class="sch-area">
+                            <div class="sch-area__inner">
+                                <form action="" class="sch-form">
+                                    <div class="sch-form-block">
+                                        <label for="" class="sch-form__label">
+                                            이름
+                                        </label>
+                                        <input type="text" class="sch-form__input" title="이름 입력" />
+                                    </div>
+                                    <div class="sch-form-block">
+                                        <label for="" class="sch-form__label">
+                                            생년월일
+                                        </label>
+                                        <div class="ui-input ui-input-date">
+                                            <input type="text" class="sch-form__input js-datepicker" value="" title="생년월일" />
+                                        </div>
+                                    </div>
+                                    <div class="sch-form-block">
+                                        <label for="" class="sch-form__label">
+                                            세대주성명
+                                        </label>
+                                        <input type="text" class="sch-form__input" title="세대주성명 입력" />
+                                    </div>
+                                    <div class="sch-form-block">
+                                        <label for="" class="sch-form__label">
+                                            주소
+                                        </label>
+                                        <input type="text" class="sch-form__input" title="주소 입력" />
+                                    </div>
+                                </form>
+                                <div class="btn-wrap">
+                                    <button type="button" class="btn btn-width--regular btn--gray">바코드검색</button>
+                                    <button type="button" class="btn btn-width--regular btn--black">검색</button>
+                                    <button type="button" class="btn btn-width--regular btn--navy">등록</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="sch-cont">
+                            <div class="sch-cont__inner">
+                                <div class="ui-scroller" style="height:27rem;">
+                                    <div class="table-wrap">
+                                        <table class="table-st">
+                                            <caption>이재민관리</caption>
+                                            <colgroup>
+                                                <col style="width:3rem">
+                                                <col style="width:7rem">
+                                                <col style="width:9rem">
+                                                <col style="width:auto">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">번호</th>
+                                                    <th scope="col">
+                                                        성명<br/>생년월일
+                                                    </th>
+                                                    <th scope="col">휴대폰 번호</th>
+                                                    <th scope="col">밴드/배급/진료/퇴소</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>
+                                                        <span class="name">홍길동</span>
+                                                        <span class="name">1991.01.01</span>
+                                                    </td>
+                                                    <td>
+                                                        010-1234-5678
+                                                    </td>
+                                                    <td>
+                                                        <div class="btn-wrap d-flex flex-wrap">
+                                                            <button type="button" class="btn btn--sky">밴드</button>
+                                                            <button type="button" class="btn btn--orange">배급</button>
+                                                            <button type="button" class="btn btn--green">진료</button>
+                                                            <button type="button" class="btn btn--lightGray popOpen" data-id="pop_moveOut">퇴소</button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>
+                                                        <span class="name">강감찬</span>
+                                                        <span class="name">1991.01.01</span>
+                                                    </td>
+                                                    <td>
+                                                        010-1234-5678
+                                                    </td>
+                                                    <td>
+                                                        <div class="btn-wrap d-flex flex-wrap">
+                                                            <button type="button" class="btn btn--sky">밴드</button>
+                                                            <button type="button" class="btn btn--orange">배급</button>
+                                                            <button type="button" class="btn btn--green">진료</button>
+                                                            <button type="button" class="btn btn--lightGray">퇴소</button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>
+                                                        <span class="name">이순신</span>
+                                                        <span class="name">1991.01.01</span>
+                                                    </td>
+                                                    <td>
+                                                        010-1234-5678
+                                                    </td>
+                                                    <td>
+                                                        <div class="btn-wrap d-flex flex-wrap">
+                                                            <button type="button" class="btn btn--sky">밴드</button>
+                                                            <button type="button" class="btn btn--orange">배급</button>
+                                                            <button type="button" class="btn btn--green">진료</button>
+                                                            <button type="button" class="btn btn--lightGray">퇴소</button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>
+                                                        <span class="name">홍길동</span>
+                                                        <span class="name">1991.01.01</span>
+                                                    </td>
+                                                    <td>
+                                                        010-1234-5678
+                                                    </td>
+                                                    <td>
+                                                        <div class="btn-wrap d-flex flex-wrap">
+                                                            <button type="button" class="btn btn--sky">밴드</button>
+                                                            <button type="button" class="btn btn--orange">배급</button>
+                                                            <button type="button" class="btn btn--green">진료</button>
+                                                            <button type="button" class="btn btn--lightGray ">퇴소</button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+
+            <div class="popup" id="pop_moveOut">
+                <div class="popup__inner">
+                    <div class="popup-cont">
+                        <div class="popup-cont__inner">
+                            <p class="popup-txt">
+                                퇴소처리 하시겠습니까?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="popup-footer">
+                        <div class="popup-footer__inner d-flex">
+                            <button type="button" class="popup-footer__btn btn--navy">확인</button>
+                            <button type="button" class="popup-footer__btn pop-close">닫기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pop-overlay"></div>
+        </div>
     </div>
+
+    <script src="resource/lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="resource/lib/jquery/jquery-ui.js"></script>
+    <script src="resource/lib/datetimepicker/moment.min.js"></script>
+    <script src="resource/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="resource/lib/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <script src="resource/lib/simplebar/simplebar.min.js"></script>
+    <script src="resource/js/common.js"></script>
+    <script src="resource/js/main.js"></script>
 </body>
 </html>

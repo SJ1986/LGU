@@ -5,43 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="resource/css/ux-common.css">
-    <title>이재민 관리 시스템</title>
+    <title>이재민 관리 시스템 > 로그인</title>
 </head>
 <body>
     <div class="wrap">
         <div class="container">
             <div class="container__inner">
                 <div class="login-wrap">
-                    <div class="login__inner">
-                        <div class="login-head">
+                    <section class="login__inner">
+                        <article class="login-head">
                             <h1 class="login-head__tit">이재민 관리 시스템</h1>
-                        </div>
-                        <div class="login-box">
+                        </article>
+                        <article class="login-box">
                             <div class="login-box__inner">
                                 <div class="login-box__tit">LOGIN</div>
                                 <form action="" class="login-box__form">
                                     <label for="" class="login-form__label login-id">
-                                        <input type="text" class="login-form__input login-id__input" placeholder="아이디를 입력하세요">
+                                        <input type="text" class="login-form__input login-id__input" placeholder="아이디를 입력하세요" title="아이디입력" />
                                     </label>
                                     <label for="" class="login-form__label login-pw">
-                                        <input type="password" class="login-form__input login-pw__input" placeholder="비밀번호를 입력하세요">
+                                        <input type="password" class="login-form__input login-pw__input" placeholder="비밀번호를 입력하세요" title="비밀번호입력" />
                                     </label>
                                 </form>
                                 <div class="btn-wrap">
-                                    <button type="button" class="btn login-box__btn">LOGIN</button>
+                                    <button type="button" class="btn login-box__btn popOpen" data-id="pop_login" title="로그인">LOGIN</button>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </article>
+                    </section>
                 </div>
                 <p class="txt reserved-right">All Rights Reserved, SQ&T Copyright(c) 2022</p>
             </div>
+            <div class="popup" id="pop_login">
+                <div class="popup__inner">
+                    <div class="popup-cont">
+                        <div class="popup-cont__inner">
+                            <p class="popup-txt">
+                                아이디 또는 비밀번호를 <br/>확인해 주세요
+                            </p>
+                        </div>
+                    </div>
+                    <div class="popup-footer">
+                        <div class="popup-footer__inner">
+                            <button type="button" class="popup-footer__btn pop-close">닫기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pop-overlay"></div>
         </div>
-        <div class="popup"></div>
-        <div class="pop-overlay"></div>
     </div>
     
     <script src="resource/lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="resource/js/common.js"></script>
     <script src="resource/js/main.js"></script>
 </body>
 </html>
