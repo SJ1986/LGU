@@ -20,6 +20,7 @@ html, body, .wrap, .container{
     padding:0;
     margin:0;
     max-width:100%;
+    padding-top:6rem;
     &__inner{
         width:100%;
         height:100%;
@@ -177,9 +178,6 @@ header{
             }
         }
     }
-    + .container{
-        padding-top:6rem;
-    }
 }
 .sideMenu{
     @include pos(fixed, $t:0, $r:0);
@@ -187,23 +185,53 @@ header{
     height:100%;
     padding:3.9rem 2rem;
     transform:translateX(100%);
-    transition:all .5s ease-in-out;
+    transition:all .2s ease-in-out;
     background-color:#fff;
     z-index:2;
     &.is-open{
         transform:translateX(0);
-        transition:all .5s ease-in-out;
+        transition:all .2s ease-in-out;
     }
     &__head{
         @include d-flex;
         @include justify-between;
+        margin-bottom:3.7rem;
     }
     &-tit{
         font-size:2.2rem;
         font-weight:400;
         color:#000;
     }
-    
+    &__item{
+        a{
+            display:block;
+            padding:2rem 0;
+            padding-left:4.5rem;
+            font-size:1.6rem;
+            font-weight:500;
+            border-top:1px solid #ddd;
+            color:#0F2065;
+            background-repeat:no-repeat;
+            background-position:1.5rem center;
+            &.sideMenu__item--01{
+                background-image:url('../image/common/icon/ico-sideMenu__item01.png');
+            }
+            &.sideMenu__item--02{
+                background-image:url('../image/common/icon/ico-sideMenu__item02.png');
+            }
+            &.sideMenu__item--03{
+                background-image:url('../image/common/icon/ico-sideMenu__item03.png');
+            }
+            &.sideMenu__item--04{
+                background-image:url('../image/common/icon/ico-sideMenu__item04.png');
+            }
+        }
+        &:last-child{
+            a{
+                border-bottom:1px solid #ddd;
+            }
+        }
+    }
 }
 .page-tit{
     font-size:1.8rem;
@@ -211,6 +239,10 @@ header{
 }
 .content{
     &-wrap{
+        width:100%;
+        height:100%;
+    }
+    &__inner{
         width:100%;
         height:100%;
     }

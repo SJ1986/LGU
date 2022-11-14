@@ -102,9 +102,10 @@
 }
 .sch{
     &-area{
+        width:100%;
+        background-color:#F2F6F9;
         &__inner{
             padding:1.8rem 2rem 2rem;
-            background-color:#F2F6F9;
             .btn-wrap{
                 display:flex;
                 margin-top:1.6rem;
@@ -117,6 +118,9 @@
                 }
             }
         }
+    }
+    &-full{
+        height:100%;
     }
     &-cont{
         &__inner{

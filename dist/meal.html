@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../resource/css/ux-common.css">
     <link rel="stylesheet" href="../resource/lib/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../resource/lib/datetimepicker/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../resource/lib/simplebar/simplebar.css">
     <title>이재민 관리 시스템 > 식사관리</title>
 </head>
 <body>
@@ -14,15 +15,46 @@
         <header>
             <section class="header__inner">
                 <article class="btn-wrap mr-auto">
-                    <button type="button" class="btn btn-preview" title="이전 화면으로 이동"></button>
+                    <button type="button" class="btn btn--preview" title="이전 화면으로 이동"></button>
                 </article>
                 <h1 class="page-tit">이재민 관리</h1>
                 <article class="btn-wrap ml-auto">
-                    <button type="button" class="btn btn-sideMenu" title="사이드 메뉴 열기"></button>
+                    <button type="button" class="btn btn-sideMenu--open" title="사이드 메뉴 열기"></button>
                 </article>
-                <article class="sideMenu"></article>
             </section>
         </header>
+        <article class="sideMenu">
+            <div class="sideMenu__inner">
+                <div class="sideMenu__head">
+                    <h2 class="sideMenu-tit">이재민 관리 시스템</h2>
+                    <button type="button" class="btn btn-sideMenu--close" title="사이드메뉴 닫기">
+                        <span></span>
+                    </button>
+                </div>
+                <div class="sideMenu__list">
+                    <div class="sideMenu__item">
+                        <a href="" class="sideMenu__item--01">
+                            이재민 관리
+                        </a>
+                    </div>
+                    <div class="sideMenu__item">
+                        <a href="" class="sideMenu__item--01">
+                            자원봉사자 관리
+                        </a>
+                    </div>
+                    <div class="sideMenu__item">
+                        <a href="" class="sideMenu__item--01">
+                            식사 관리
+                        </a>
+                    </div>
+                    <div class="sideMenu__item">
+                        <a href="" class="sideMenu__item--01">
+                            로그아웃
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
         <div class="container">
             <div class="container__inner">
                 <div class="content-wrap">
@@ -113,14 +145,16 @@
                                     </div>
                                 </form>
                                 <div class="btn-wrap">
-                                    <button type="button" class="btn btn-width--regular btn-navy">저장</button>
-                                    <button type="button" class="btn btn-width--regular btn-white">닫기</button>
+                                    <button type="button" class="btn btn-width--regular btn--navy">저장</button>
+                                    <button type="button" class="btn btn-width--regular btn--white">닫기</button>
                                 </div>
                             </div>
                         </article>
                     </section>
                 </div>
             </div>
+
+            <div class="pop-overlay"></div>
         </div>
     </div>
 
@@ -129,6 +163,7 @@
     <script src="../resource/lib/datetimepicker/moment.min.js"></script>
     <script src="../resource/lib/bootstrap/bootstrap.min.js"></script>
     <script src="../resource/lib/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <script src="../resource/lib/simplebar/simplebar.min.js"></script>
     <script src="../resource/js/common.js"></script>
     <script src="../resource/js/main.js"></script>
 </body>

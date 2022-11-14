@@ -7,22 +7,54 @@
     <link rel="stylesheet" href="../resource/css/ux-common.css">
     <link rel="stylesheet" href="../resource/lib/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../resource/lib/datetimepicker/bootstrap-datetimepicker.min.css">
-    <title>이재민 관리 시스템 > 진료</title>
+    <link rel="stylesheet" href="../resource/lib/simplebar/simplebar.css">
+    <title>이재민 관리 시스템 > 진료등록</title>
 </head>
 <body>
     <div class="wrap">
         <header>
             <section class="header__inner">
                 <article class="btn-wrap mr-auto">
-                    <button type="button" class="btn btn-preview" title="이전 화면으로 이동"></button>
+                    <button type="button" class="btn btn--preview" title="이전 화면으로 이동"></button>
                 </article>
-                <h1 class="page-tit">이재민 관리</h1>
+                <h1 class="page-tit">진료 등록</h1>
                 <article class="btn-wrap ml-auto">
-                    <button type="button" class="btn btn-sideMenu" title="사이드 메뉴 열기"></button>
+                    <button type="button" class="btn btn-sideMenu--open" title="사이드 메뉴 열기"></button>
                 </article>
-                <article class="sideMenu"></article>
             </section>
         </header>
+        <article class="sideMenu">
+            <div class="sideMenu__inner">
+                <div class="sideMenu__head">
+                    <h2 class="sideMenu-tit">이재민 관리 시스템</h2>
+                    <button type="button" class="btn btn-sideMenu--close" title="사이드메뉴 닫기">
+                        <span></span>
+                    </button>
+                </div>
+                <div class="sideMenu__list">
+                    <div class="sideMenu__item">
+                        <a href="" class="sideMenu__item--01">
+                            이재민 관리
+                        </a>
+                    </div>
+                    <div class="sideMenu__item">
+                        <a href="" class="sideMenu__item--02">
+                            자원봉사자 관리
+                        </a>
+                    </div>
+                    <div class="sideMenu__item">
+                        <a href="" class="sideMenu__item--03">
+                            식사 관리
+                        </a>
+                    </div>
+                    <div class="sideMenu__item">
+                        <a href="" class="sideMenu__item--04">
+                            로그아웃
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
         <div class="container">
             <div class="container__inner">
                 <div class="content-wrap">
@@ -33,94 +65,89 @@
                                     <div class="sch-form-block">
                                         <label for="" class="sch-form__label">
                                             이름
-                                            <span class="mark-essential">*</span>
                                         </label>
-                                        <input type="text" class="sch-form__input" title="이름 입력" />
+                                        <input type="text" class="sch-form__input" title="이름 입력" value="홍길동" disabled />
                                     </div>
                                     <div class="sch-form-block">
                                         <label for="" class="sch-form__label">
                                             생년월일
-                                            <span class="mark-essential">*</span>
                                         </label>
                                         <div class="ui-input ui-input-date">
-                                            <input type="text" class="sch-form__input js-datepicker" value="" title="생년월일" />
+                                            <input type="text" class="sch-form__input js-datepicker" value="1991.01.01" title="생년월일"  disabled  />
                                         </div>
                                     </div>
                                     <div class="sch-form-block">
                                         <label for="" class="sch-form__label">
-                                            전화번호
+                                            주소
                                         </label>
-                                        <input type="text" class="sch-form__input" title="전화번호 입력" />
-                                    </div>
-                                    <div class="sch-form-block">
-                                        <label for="" class="sch-form__label">
-                                            성별
-                                        </label>
-                                        <select type="text" class="sch-form__select" title="성별 입력">
-                                            <option value="">선택</option>
-                                            <option value="">남</option>
-                                            <option value="">여</option>
-                                        </select>
-                                    </div>
-                                    <div class="sch-form-block">
-                                        <label for="" class="sch-form__label">
-                                            도로명주소
-                                        </label>
-                                        <input type="text" class="sch-form__input" title="도로명주소 입력" />
-                                    </div>
-                                    <div class="sch-form-block">
-                                        <label for="" class="sch-form__label">
-                                            지번주소
-                                        </label>
-                                        <input type="text" class="sch-form__input" title="지번주소 입력" />
-                                    </div>
-                                    <div class="sch-form-block">
-                                        <label for="" class="sch-form__label">
-                                            세대주이름
-                                        </label>
-                                        <input type="text" class="sch-form__input" title="세대주이름 입력" />
-                                    </div>
-                                    <div class="sch-form-block">
-                                        <label for="" class="sch-form__label">
-                                            세대주생년월일
-                                        </label>
-                                        <div class="ui-input ui-input-date">
-                                            <input type="text" class="sch-form__input js-datepicker" value="" title="세대주생년월일" />
-                                        </div>
-                                    </div>
-                                    <div class="sch-form-block">
-                                        <label for="" class="sch-form__label">
-                                            투입구호소
-                                            <span class="mark-essential">*</span>
-                                        </label>
-                                        <select type="text" class="sch-form__select" title="투입구호소 선택">
-                                            <option value="">교동경로당</option>
-                                            <option value="">1</option>
-                                            <option value="">2</option>
-                                        </select>
-                                    </div>
-                                    <div class="sch-form-block">
-                                        <label for="" class="sch-form__label">
-                                            카드종류
-                                        </label>
-                                        <input type="text" class="sch-form__input" disabled title="카드종류 입력" />
-                                    </div>
-                                    <div class="sch-form-block">
-                                        <label for="" class="sch-form__label">
-                                            카드ID
-                                        </label>
-                                        <input type="text" class="sch-form__input" disabled title="카드ID 입력" />
+                                        <input type="text" class="sch-form__input" title="주소 입력" value="울산시 중구 한결길 24"  disabled  />
                                     </div>
                                 </form>
                                 <div class="btn-wrap">
-                                    <button type="button" class="btn btn-width--regular btn-navy">저장</button>
-                                    <button type="button" class="btn btn-width--regular btn-white">닫기</button>
+                                    <button type="button" class="btn btn-width--regular btn--navy">등록</button>
+                                    <button type="button" class="btn btn-width--regular btn--white">삭제</button>
                                 </div>
                             </div>
+                        </article>
+                        <article class="sch-cont">
+                            <article class="sch-cont">
+                                <div class="sch-cont__inner">
+                                    <div class="ui-scroller" style="height:31rem;">
+                                        <div class="table-wrap">
+                                            <table class="table-st">
+                                                <caption>진료등록 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:5rem">
+                                                    <col style="width:5rem">
+                                                    <col style="width:9rem">
+                                                    <col style="width:auto">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">
+                                                            <div class="form-block">
+
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            성명<br/>생년월일
+                                                        </th>
+                                                        <th scope="col">휴대폰 번호</th>
+                                                        <th scope="col">밴드/배급/진료/퇴소</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <span class="name">홍길동</span>
+                                                            <span class="name">1991.01.01</span>
+                                                        </td>
+                                                        <td>
+                                                            010-1234-5678
+                                                        </td>
+                                                        <td>
+                                                            <div class="btn-wrap d-flex flex-wrap">
+                                                                <button type="button" class="btn btn--sky">밴드</button>
+                                                                <button type="button" class="btn btn--orange">배급</button>
+                                                                <button type="button" class="btn btn--green">진료</button>
+                                                                <button type="button" class="btn btn--lightGray popOpen" data-id="pop_moveOut">퇴소</button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
                         </article>
                     </section>
                 </div>
             </div>
+
+            <div class="pop-overlay"></div>
         </div>
     </div>
 
@@ -129,6 +156,7 @@
     <script src="../resource/lib/datetimepicker/moment.min.js"></script>
     <script src="../resource/lib/bootstrap/bootstrap.min.js"></script>
     <script src="../resource/lib/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <script src="../resource/lib/simplebar/simplebar.min.js"></script>
     <script src="../resource/js/common.js"></script>
     <script src="../resource/js/main.js"></script>
 </body>

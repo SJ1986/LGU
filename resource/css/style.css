@@ -137,9 +137,12 @@
   text-align: center;
 }
 
+.sch-area {
+  width: 100%;
+  background-color: #F2F6F9;
+}
 .sch-area__inner {
   padding: 1.8rem 2rem 2rem;
-  background-color: #F2F6F9;
 }
 .sch-area__inner .btn-wrap {
   display: -webkit-box;
@@ -155,6 +158,9 @@
   height: 4rem;
   margin-left: 0.4rem;
   border-radius: 0.5rem;
+}
+.sch-full {
+  height: 100%;
 }
 .sch-cont__inner {
   padding: 1.8rem 2rem 2rem;

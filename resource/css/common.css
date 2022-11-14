@@ -68,6 +68,7 @@ html, body, .wrap, .container {
   padding: 0;
   margin: 0;
   max-width: 100%;
+  padding-top: 6rem;
 }
 .container__inner {
   width: 100%;
@@ -232,9 +233,6 @@ header .header__inner {
 header .header__inner .btn-wrap:first-child {
   width: 2.8rem;
 }
-header + .container {
-  padding-top: 6rem;
-}
 
 .sideMenu {
   position: fixed;
@@ -245,16 +243,16 @@ header + .container {
   padding: 3.9rem 2rem;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   background-color: #fff;
   z-index: 2;
 }
 .sideMenu.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .sideMenu__head {
   display: -webkit-box;
@@ -265,11 +263,38 @@ header + .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 3.7rem;
 }
 .sideMenu-tit {
   font-size: 2.2rem;
   font-weight: 400;
   color: #000;
+}
+.sideMenu__item a {
+  display: block;
+  padding: 2rem 0;
+  padding-left: 4.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-top: 1px solid #ddd;
+  color: #0F2065;
+  background-repeat: no-repeat;
+  background-position: 1.5rem center;
+}
+.sideMenu__item a.sideMenu__item--01 {
+  background-image: url("../image/common/icon/ico-sideMenu__item01.png");
+}
+.sideMenu__item a.sideMenu__item--02 {
+  background-image: url("../image/common/icon/ico-sideMenu__item02.png");
+}
+.sideMenu__item a.sideMenu__item--03 {
+  background-image: url("../image/common/icon/ico-sideMenu__item03.png");
+}
+.sideMenu__item a.sideMenu__item--04 {
+  background-image: url("../image/common/icon/ico-sideMenu__item04.png");
+}
+.sideMenu__item:last-child a {
+  border-bottom: 1px solid #ddd;
 }
 
 .page-tit {
@@ -278,6 +303,10 @@ header + .container {
 }
 
 .content-wrap {
+  width: 100%;
+  height: 100%;
+}
+.content__inner {
   width: 100%;
   height: 100%;
 }
