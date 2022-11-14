@@ -1,6 +1,9 @@
 .ml-auto {
   margin-left: auto;
 }
+.ml-4 {
+  margin-left: 0.4rem;
+}
 .mr-auto {
   margin-right: auto;
 }

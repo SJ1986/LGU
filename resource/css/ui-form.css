@@ -1,4 +1,4 @@
-.icon, .form-block__select, .sch-form__select, .sch-form .ui-input::before {
+.icon, .form-block__select, .form-block input[type=checkbox]:checked, .sch-form__select, .sch-form .ui-input::before {
   display: inline-block;
   background-repeat: no-repeat;
   background-size: contain;
@@ -40,6 +40,50 @@
   height: 0.1 0.2rem;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 9L11.1962 0H0.803848L6 9Z' fill='%23424242'/%3E%3C/svg%3E%0A");
   background-size: 1.2rem 1.2rem;
+}
+.icon-check, .form-block input[type=checkbox]:checked {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='6' height='6' viewBox='0 0 6 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_24_571)'%3E%3Cpath d='M5.70683 1.39665C4.74621 2.86334 4.46902 3.26763 2.82952 5.5452C2.43691 6.0161 2.1679 6.06549 1.88435 5.94259C1.5081 5.75883 0.471141 3.85454 0.124882 3.35033C-0.239553 2.67498 0.260296 1.78601 0.841029 2.05247C1.14366 2.1903 1.96978 3.59726 2.22152 3.94298C2.99492 2.95408 4.15366 1.1612 4.91071 0.225135C5.38783 -0.365217 6.5393 0.26878 5.70683 1.3978V1.39665Z' fill='white'/%3E%3Cg clip-path='url(%23clip1_24_571)'%3E%3Cpath d='M5.70683 1.39665C4.74621 2.86334 4.46902 3.26763 2.82952 5.5452C2.43691 6.0161 2.1679 6.06549 1.88435 5.94259C1.5081 5.75883 0.471141 3.85454 0.124882 3.35033C-0.239553 2.67498 0.260296 1.78601 0.841029 2.05247C1.14366 2.1903 1.96978 3.59726 2.22152 3.94298C2.99492 2.95408 4.15366 1.1612 4.91071 0.225135C5.38783 -0.365217 6.5393 0.26878 5.70683 1.3978V1.39665Z' fill='white'/%3E%3C/g%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_24_571'%3E%3Crect width='6' height='6' fill='white'/%3E%3C/clipPath%3E%3CclipPath id='clip1_24_571'%3E%3Crect width='6' height='6' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-size: 0.6rem 0.6rem;
+  background-position: center center;
+}
+
+.login-form__label {
+  display: block;
+  width: 100%;
+}
+.login-form__label.login-id {
+  margin-bottom: 1.6rem;
+}
+.login-form__input {
+  width: 100%;
+  height: 5rem;
+  padding-left: 3.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #000;
+  text-indent: 0;
+  border: none;
+  border-bottom: 1px solid #0F2065;
+}
+.login-form__input::-webkit-input-placeholder {
+  font-size: 1.4rem;
+  color: #ccc;
+}
+.login-form__input::-moz-placeholder {
+  font-size: 1.4rem;
+  color: #ccc;
+}
+.login-form__input:-ms-input-placeholder {
+  font-size: 1.4rem;
+  color: #ccc;
+}
+.login-form__input::-ms-input-placeholder {
+  font-size: 1.4rem;
+  color: #ccc;
+}
+.login-form__input::placeholder {
+  font-size: 1.4rem;
+  color: #ccc;
 }
 
 .sch-form {
@@ -113,6 +157,14 @@
   width: 1.2rem;
   height: 1.2rem;
   border: 1px solid #ddd;
+  border-radius: 0.3rem;
+  -webkit-appearance: initial;
+     -moz-appearance: initial;
+          appearance: initial;
+}
+.form-block input[type=checkbox]:checked {
+  border: 1px solid #0F2065;
+  background-color: #0F2065;
 }
 .form-block__select {
   width: 100%;

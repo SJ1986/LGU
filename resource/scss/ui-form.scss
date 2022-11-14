@@ -2,6 +2,33 @@
 @import 'mixin';
 @import 'svg';
 
+.login{
+    &-form{
+        &__label{
+            display:block;
+            width:100%;
+            &.login-id{
+                margin-bottom:1.6rem;
+            }
+        }
+        &__input{
+            width:100%;
+            height:5rem;
+            padding-left:3.5rem;
+            font-size:1.4rem;
+            font-weight:500;
+            color:#000;
+            text-indent:0;
+            border:none;
+            border-bottom:1px solid #0F2065;
+            &::placeholder{
+                font-size:1.4rem;
+                color:#ccc;
+            }
+        }
+    }
+}
+
 .sch{
     &-form{
         margin-top:-.4rem;
@@ -74,6 +101,13 @@
                 width:1.2rem;
                 height:1.2rem;
                 border:1px solid #ddd;
+                border-radius:.3rem;
+                appearance: initial;
+                &:checked{
+                    border:1px solid #0F2065;
+                    background-color:#0F2065;
+                    @extend .icon, .icon-check;
+                }
             }
         }
         &__select{

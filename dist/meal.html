@@ -17,7 +17,7 @@
                 <article class="btn-wrap mr-auto">
                     <button type="button" class="btn btn--preview" title="이전 화면으로 이동"></button>
                 </article>
-                <h1 class="page-tit">이재민 관리</h1>
+                <h1 class="page-tit">진료 등록</h1>
                 <article class="btn-wrap ml-auto">
                     <button type="button" class="btn btn-sideMenu--open" title="사이드 메뉴 열기"></button>
                 </article>
@@ -38,17 +38,17 @@
                         </a>
                     </div>
                     <div class="sideMenu__item">
-                        <a href="" class="sideMenu__item--01">
+                        <a href="" class="sideMenu__item--02">
                             자원봉사자 관리
                         </a>
                     </div>
                     <div class="sideMenu__item">
-                        <a href="" class="sideMenu__item--01">
+                        <a href="" class="sideMenu__item--03">
                             식사 관리
                         </a>
                     </div>
                     <div class="sideMenu__item">
-                        <a href="" class="sideMenu__item--01">
+                        <a href="" class="sideMenu__item--04">
                             로그아웃
                         </a>
                     </div>
@@ -64,89 +64,175 @@
                                 <form action="" class="sch-form">
                                     <div class="sch-form-block">
                                         <label for="" class="sch-form__label">
-                                            이름
-                                            <span class="mark-essential">*</span>
-                                        </label>
-                                        <input type="text" class="sch-form__input" title="이름 입력" />
-                                    </div>
-                                    <div class="sch-form-block">
-                                        <label for="" class="sch-form__label">
-                                            생년월일
-                                            <span class="mark-essential">*</span>
+                                            대상일자
                                         </label>
                                         <div class="ui-input ui-input-date">
-                                            <input type="text" class="sch-form__input js-datepicker" value="" title="생년월일" />
+                                            <input type="text" class="sch-form__input js-datepicker" value="1991.01.01" title="생년월일"    />
                                         </div>
                                     </div>
-                                    <div class="sch-form-block">
+                                    <div class="sch-form-block d-flex">
                                         <label for="" class="sch-form__label">
-                                            전화번호
+                                            식사차수
                                         </label>
-                                        <input type="text" class="sch-form__input" title="전화번호 입력" />
-                                    </div>
-                                    <div class="sch-form-block">
-                                        <label for="" class="sch-form__label">
-                                            성별
-                                        </label>
-                                        <select type="text" class="sch-form__select" title="성별 입력">
-                                            <option value="">선택</option>
-                                            <option value="">남</option>
-                                            <option value="">여</option>
-                                        </select>
-                                    </div>
-                                    <div class="sch-form-block">
-                                        <label for="" class="sch-form__label">
-                                            도로명주소
-                                        </label>
-                                        <input type="text" class="sch-form__input" title="도로명주소 입력" />
-                                    </div>
-                                    <div class="sch-form-block">
-                                        <label for="" class="sch-form__label">
-                                            지번주소
-                                        </label>
-                                        <input type="text" class="sch-form__input" title="지번주소 입력" />
-                                    </div>
-                                    <div class="sch-form-block">
-                                        <label for="" class="sch-form__label">
-                                            세대주이름
-                                        </label>
-                                        <input type="text" class="sch-form__input" title="세대주이름 입력" />
-                                    </div>
-                                    <div class="sch-form-block">
-                                        <label for="" class="sch-form__label">
-                                            세대주생년월일
-                                        </label>
-                                        <div class="ui-input ui-input-date">
-                                            <input type="text" class="sch-form__input js-datepicker" value="" title="세대주생년월일" />
-                                        </div>
-                                    </div>
-                                    <div class="sch-form-block">
-                                        <label for="" class="sch-form__label">
-                                            투입구호소
-                                            <span class="mark-essential">*</span>
-                                        </label>
-                                        <select type="text" class="sch-form__select" title="투입구호소 선택">
-                                            <option value="">교동경로당</option>
+                                        <select name="" id=""  class="sch-form__select select-meal-count">
                                             <option value="">1</option>
                                             <option value="">2</option>
+                                            <option value="">3</option>
                                         </select>
-                                    </div>
-                                    <div class="sch-form-block">
-                                        <label for="" class="sch-form__label">
-                                            카드종류
-                                        </label>
-                                        <input type="text" class="sch-form__input" disabled title="카드종류 입력" />
-                                    </div>
-                                    <div class="sch-form-block">
-                                        <label for="" class="sch-form__label">
-                                            카드ID
-                                        </label>
-                                        <input type="text" class="sch-form__input" disabled title="카드ID 입력" />
+                                        <button type="button" class="btn btn-width--small btn--sea">추가</button>
                                     </div>
                                 </form>
                                 <div class="btn-wrap">
-                                    <button type="button" class="btn btn-width--regular btn--navy">저장</button>
-                                    <button type="button" class="btn btn-width--regular btn--white">닫기</button>
+                                    <button type="button" class="btn btn-width--regular btn--gray">바코드 스캔</button>
+                                    <button type="button" class="btn btn-width--regular btn--black">검색</button>
+                                    <button type="button" class="btn btn-width--regular btn--navy">등록</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="sch-cont">
+                            <div class="sch-cont__inner">
+                                <p class="txt txt-meal">2022.09.29 1차 식사</p>
+                                <div class="ui-scroller" style="height:31rem;">
+                                    <div class="table-wrap">
+                                        <table class="table-st">
+                                            <caption>식사관리 테이블</caption>
+                                            <colgroup>
+                                                <col style="width:5rem">
+                                                <col style="width:5rem">
+                                                <col style="width:9rem">
+                                                <col style="width:auto">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">
+                                                        <div class="form-block">
+                                                            <form action="">
+                                                                <label for="">
+                                                                    <input type="checkbox" class="check_all" name="check_head" id="check_mealAll">
+                                                                </label>
+                                                            </form>
+                                                        </div>
+                                                    </th>
+                                                    <th scope="col">
+                                                        번호
+                                                    </th>
+                                                    <th scope="col">성명</th>
+                                                    <th scope="col">진료일시</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-block">
+                                                            <form action="">
+                                                                <label for="">
+                                                                    <input type="checkbox" name="check_child" id="">
+                                                                </label>
+                                                            </form>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        1
+                                                    </td>
+                                                    <td>홍길동</td>
+                                                    <td>
+                                                        2022.09.29 12:10:14
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-block">
+                                                            <form action="">
+                                                                <label for="">
+                                                                    <input type="checkbox" name="check_child" id="">
+                                                                </label>
+                                                            </form>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        2
+                                                    </td>
+                                                    <td>홍길동</td>
+                                                    <td>
+                                                        2022.09.29 12:10:14
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-block">
+                                                            <form action="">
+                                                                <label for="">
+                                                                    <input type="checkbox" name="check_child" id="">
+                                                                </label>
+                                                            </form>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        3
+                                                    </td>
+                                                    <td>홍길동</td>
+                                                    <td>
+                                                        2022.09.29 12:10:14
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-block">
+                                                            <form action="">
+                                                                <label for="">
+                                                                    <input type="checkbox" name="check_child" id="">
+                                                                </label>
+                                                            </form>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        4
+                                                    </td>
+                                                    <td>홍길동</td>
+                                                    <td>
+                                                        2022.09.29 12:10:14
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-block">
+                                                            <form action="">
+                                                                <label for="">
+                                                                    <input type="checkbox" name="check_child" id="">
+                                                                </label>
+                                                            </form>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        5
+                                                    </td>
+                                                    <td>홍길동</td>
+                                                    <td>
+                                                        2022.09.29 12:10:14
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-block">
+                                                            <form action="">
+                                                                <label for="">
+                                                                    <input type="checkbox" name="check_child" id="">
+                                                                </label>
+                                                            </form>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        6
+                                                    </td>
+                                                    <td>홍길동</td>
+                                                    <td>
+                                                        2022.09.29 12:10:14
+                                                    </td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </article>

@@ -36,49 +36,7 @@
         &__form{
             margin-top:5rem;
         }
-        .btn{
-            &-wrap{
-                margin-top:4.7rem;
-                text-align:center;
-            }
-        }
-        &__btn{
-            width:20rem;
-            height:5rem;
-            background-color:#0F2065;
-            font-size:1.6rem;
-            font-weight:600;
-            color:#fff;
-            border-radius:4rem;
-            &:hover{
-                color:#fff;
-                background-color:#0F2065;
-            }
-        }
-    }
-    &-form{
-        &__label{
-            display:block;
-            width:100%;
-            &.login-id{
-                margin-bottom:1.6rem;
-            }
-        }
-        &__input{
-            width:100%;
-            height:5rem;
-            padding-left:3.5rem;
-            font-size:1.4rem;
-            font-weight:500;
-            color:#000;
-            text-indent:0;
-            border:none;
-            border-bottom:1px solid #0F2065;
-            &::placeholder{
-                font-size:1.4rem;
-                color:#ccc;
-            }
-        }
+        
     }
     &-id{
         &__input{
@@ -90,7 +48,6 @@
             @extend .icon, .icon-loginLocker;
         }
     }
-
 }
 .txt{
     &.reserved-right{
@@ -99,6 +56,12 @@
         color:#747478;
         text-align:center;
     }
+    &-meal{
+        margin-bottom:1rem;
+        font-size:1.4rem;
+        font-weight:500;
+        color:#000;
+    }
 }
 .sch{
     &-area{
@@ -106,17 +69,10 @@
         background-color:#F2F6F9;
         &__inner{
             padding:1.8rem 2rem 2rem;
-            .btn-wrap{
-                display:flex;
-                margin-top:1.6rem;
-                margin-left:-.4rem;
-                justify-content:center;
-                button{
-                    height:4rem;
-                    margin-left:.4rem;
-                    border-radius:.5rem;
-                }
-            }
+        }
+        .select-meal-count{
+            width:calc(100% - 17.9rem);
+            margin-right:.4rem;
         }
     }
     &-full{
@@ -126,21 +82,7 @@
         &__inner{
             padding:1.8rem 2rem 2rem;
             background-color:#fff;
-        }
-        .btn-wrap{
-            margin-top:-.4rem;
-            margin-left:-.4rem;
-            button{
-                flex:1 1 40%;
-                width:5.7rem;
-                height:2.8rem;
-                margin-left:.4rem;
-                margin-top:.4rem;
-                color:#555;
-                font-size:1.2rem;
-                border-radius:.5rem;
-            }
-        }
+        }        
     }
 }
 .mark{
