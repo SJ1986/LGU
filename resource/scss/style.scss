@@ -131,6 +131,7 @@
             margin-top:-.4rem;
             margin-left:-.4rem;
             button{
+                flex:1 1 40%;
                 width:5.7rem;
                 height:2.8rem;
                 margin-left:.4rem;
@@ -141,79 +142,31 @@
             }
         }
     }
-    &-form{
-        margin-top:-.4rem;
-        &-block{
-            display:flex;
-            align-items:center;
-            margin-top:.4rem;
-        }
-        &__label{
-            display:block;
-            width:11.5rem;
-            font-size:1.4rem;
-            font-weight:500;
-        }
-        .ui{
-            &-input{
-                position:relative;
-                width:calc(100% - 11.5rem);
-                input{
-                    width:100%;
-                }
-                &::before{
-                    @include pos(absolute, $t:50%, $r:1rem);
-                    display:block;
-                    width:1.4rem;
-                    height:1.2rem;
-                    @extend .icon, .icon-datepicker;
-                    transform:translateY(-50%);
-                    content:""
-                }
-            }
-        }
-        &__input{
-            width:calc(100% - 11.5rem);
-            height:4rem;
-            border-radius:.5rem;
-            border:1px solid #ddd;
-            font-size:1.4rem;
-            font-weight:600;
-            color:#000;
-            outline:none;
-            &:focus{
-                border:1px solid #5A9DFF;
-                box-shadow:1px 4px 7px 0px rgb(0 0 0 / 10%);
-            }
-            &:disabled{
-                background-color:#ddd;
-            }
-        }
-        &__select{
-            width:calc(100% - 11.5rem);
-            height:4rem;
-            border-radius:.5rem;
-            border:1px solid #ddd;
-            background-color:#fff;
-            font-size:1.2rem;
-            font-weight:500;
-            color:#747478;
-            outline:none;
-            line-height:4rem;
-            @extend .icon, .icon-dropdown;
-        }
-    }
 }
 .mark{
     &-essential{
         color:#FF0000;
     }
 }
-#pop_login, #pop_moveOut{
-    .popup{
-        &-cont{
-            &__inner{
-                padding:4rem 0;
+#pop{
+    &_login, &_moveOut{
+        .popup{
+            &-cont{
+                &__inner{
+                    padding:4rem 0;
+                }
+            }
+        }
+    }
+    &_medicalAdmit{
+        .popup{
+            &-cont{
+                &__inner{
+                    padding:1.5rem 1.8rem;
+                }
+            }
+            &-txt{
+                text-align:left;
             }
         }
     }

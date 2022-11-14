@@ -50,6 +50,12 @@ html, body, .wrap, .container{
             color:#000;
             line-height:1.5;
             text-align:center;
+            + .form-block{
+                margin-top:.7rem;
+                + .popup-txt{
+                    margin-top:1.5rem;
+                }
+            }
         }
         &-footer{
             &__btn{

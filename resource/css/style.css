@@ -1,4 +1,4 @@
-.icon, .sch-form__select, .sch-form .ui-input::before, .login-pw__input, .login-id__input {
+.icon, .login-pw__input, .login-id__input {
   display: inline-block;
   background-repeat: no-repeat;
   background-size: contain;
@@ -29,13 +29,13 @@
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='28' height='18' viewBox='0 0 28 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='9.83545' x2='28' y2='9.83545' stroke='black'/%3E%3Cline y1='17.4557' x2='28' y2='17.4557' stroke='black'/%3E%3Cline y1='2.21518' x2='22' y2='2.21518' stroke='black'/%3E%3Cellipse cx='26.5' cy='2.23892' rx='1.5' ry='1.4288' fill='black'/%3E%3C/svg%3E%0A");
   background-size: 2.8rem 1.7rem;
 }
-.icon-datepicker, .sch-form .ui-input::before {
+.icon-datepicker {
   width: 1.4rem;
   height: 0.1 0.2rem;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='14' height='12' viewBox='0 0 14 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_12_53)'%3E%3Cpath d='M12.7855 12H1.21446C0.545157 12 0 11.4863 0 10.8557V2.01907C0 1.38715 0.545157 0.874756 1.21446 0.874756H12.7855C13.4548 0.874756 14 1.38842 14 2.01907V10.8557C14 11.4863 13.4548 12 12.7855 12ZM1.21446 1.63763C0.991807 1.63763 0.809639 1.80928 0.809639 2.01907V10.8557C0.809639 11.0655 0.991807 11.2371 1.21446 11.2371H12.7855C13.0082 11.2371 13.1904 11.0655 13.1904 10.8557V2.01907C13.1904 1.80928 13.0082 1.63763 12.7855 1.63763H1.21446Z' fill='%23424242'/%3E%3Cpath d='M13.4602 4.30769H0.555942C0.331942 4.30769 0.151123 4.13731 0.151123 3.92625C0.151123 3.71519 0.331942 3.54482 0.555942 3.54482H13.4602C13.6842 3.54482 13.865 3.71519 13.865 3.92625C13.865 4.13731 13.6842 4.30769 13.4602 4.30769Z' fill='%23424242'/%3E%3Cpath d='M3.89573 2.51113C3.67173 2.51113 3.49091 2.34075 3.49091 2.12969V0.381437C3.49091 0.170375 3.67173 0 3.89573 0C4.11972 0 4.30054 0.170375 4.30054 0.381437V2.12969C4.30054 2.34075 4.11972 2.51113 3.89573 2.51113Z' fill='%23424242'/%3E%3Cpath d='M6.99936 2.51113C6.77536 2.51113 6.59454 2.34075 6.59454 2.12969V0.381437C6.59454 0.170375 6.77536 0 6.99936 0C7.22336 0 7.40418 0.170375 7.40418 0.381437V2.12969C7.40418 2.34075 7.22336 2.51113 6.99936 2.51113Z' fill='%23424242'/%3E%3Cpath d='M10.1029 2.51113C9.87894 2.51113 9.69812 2.34075 9.69812 2.12969V0.381437C9.69812 0.170375 9.87894 0 10.1029 0C10.3269 0 10.5078 0.170375 10.5078 0.381437V2.12969C10.5078 2.34075 10.3269 2.51113 10.1029 2.51113Z' fill='%23424242'/%3E%3Cpath d='M3.18458 5.57915H2.16309V6.45391H3.18458V5.57915Z' fill='%23424242'/%3E%3Cpath d='M5.38142 5.57915H4.35992V6.45391H5.38142V5.57915Z' fill='%23424242'/%3E%3Cpath d='M7.5782 5.57915H6.5567V6.45391H7.5782V5.57915Z' fill='%23424242'/%3E%3Cpath d='M9.77503 5.57915H8.75354V6.45391H9.77503V5.57915Z' fill='%23424242'/%3E%3Cpath d='M11.9719 5.57915H10.9504V6.45391H11.9719V5.57915Z' fill='%23424242'/%3E%3Cpath d='M3.18458 7.39098H2.16309V8.26574H3.18458V7.39098Z' fill='%23424242'/%3E%3Cpath d='M5.38142 7.39098H4.35992V8.26574H5.38142V7.39098Z' fill='%23424242'/%3E%3Cpath d='M7.5782 7.39098H6.5567V8.26574H7.5782V7.39098Z' fill='%23424242'/%3E%3Cpath d='M9.77503 7.39098H8.75354V8.26574H9.77503V7.39098Z' fill='%23424242'/%3E%3Cpath d='M11.9719 7.39098H10.9504V8.26574H11.9719V7.39098Z' fill='%23424242'/%3E%3Cpath d='M3.18458 9.20279H2.16309V10.0776H3.18458V9.20279Z' fill='%23424242'/%3E%3Cpath d='M5.38142 9.20279H4.35992V10.0776H5.38142V9.20279Z' fill='%23424242'/%3E%3Cpath d='M7.5782 9.20279H6.5567V10.0776H7.5782V9.20279Z' fill='%23424242'/%3E%3Cpath d='M9.77503 9.20279H8.75354V10.0776H9.77503V9.20279Z' fill='%23424242'/%3E%3Cpath d='M11.9719 9.20279H10.9504V10.0776H11.9719V9.20279Z' fill='%23424242'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_12_53'%3E%3Crect width='14' height='12' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
   background-size: 1.4rem 1.2rem;
 }
-.icon-dropdown, .sch-form__select {
+.icon-dropdown {
   width: 1.2rem;
   height: 0.1 0.2rem;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 9L11.1962 0H0.803848L6 9Z' fill='%23424242'/%3E%3C/svg%3E%0A");
@@ -171,6 +171,9 @@
   margin-left: -0.4rem;
 }
 .sch-cont .btn-wrap button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
   width: 5.7rem;
   height: 2.8rem;
   margin-left: 0.4rem;
@@ -179,72 +182,6 @@
   font-size: 1.2rem;
   border-radius: 0.5rem;
 }
-.sch-form {
-  margin-top: -0.4rem;
-}
-.sch-form-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 0.4rem;
-}
-.sch-form__label {
-  display: block;
-  width: 11.5rem;
-  font-size: 1.4rem;
-  font-weight: 500;
-}
-.sch-form .ui-input {
-  position: relative;
-  width: calc(100% - 11.5rem);
-}
-.sch-form .ui-input input {
-  width: 100%;
-}
-.sch-form .ui-input::before {
-  position: absolute;
-  top: 50%;
-  right: 1rem;
-  display: block;
-  width: 1.4rem;
-  height: 1.2rem;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  content: "";
-}
-.sch-form__input {
-  width: calc(100% - 11.5rem);
-  height: 4rem;
-  border-radius: 0.5rem;
-  border: 1px solid #ddd;
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #000;
-  outline: none;
-}
-.sch-form__input:focus {
-  border: 1px solid #5A9DFF;
-  -webkit-box-shadow: 1px 4px 7px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 1px 4px 7px 0px rgba(0, 0, 0, 0.1);
-}
-.sch-form__input:disabled {
-  background-color: #ddd;
-}
-.sch-form__select {
-  width: calc(100% - 11.5rem);
-  height: 4rem;
-  border-radius: 0.5rem;
-  border: 1px solid #ddd;
-  background-color: #fff;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #747478;
-  outline: none;
-  line-height: 4rem;
-}
 
 .mark-essential {
   color: #FF0000;
@@ -252,4 +189,10 @@
 
 #pop_login .popup-cont__inner, #pop_moveOut .popup-cont__inner {
   padding: 4rem 0;
+}
+#pop_medicalAdmit .popup-cont__inner {
+  padding: 1.5rem 1.8rem;
+}
+#pop_medicalAdmit .popup-txt {
+  text-align: left;
 }

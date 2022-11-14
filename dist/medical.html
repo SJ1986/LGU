@@ -84,7 +84,7 @@
                                     </div>
                                 </form>
                                 <div class="btn-wrap">
-                                    <button type="button" class="btn btn-width--regular btn--navy">등록</button>
+                                    <button type="button" class="btn btn-width--regular btn--navy popOpen" data-id="pop_medicalAdmit">등록</button>
                                     <button type="button" class="btn btn-width--regular btn--white">삭제</button>
                                 </div>
                             </div>
@@ -106,33 +106,127 @@
                                                     <tr>
                                                         <th scope="col">
                                                             <div class="form-block">
-
+                                                                <form action="">
+                                                                    <label for="">
+                                                                        <input type="checkbox" name="" id="">
+                                                                    </label>
+                                                                </form>
                                                             </div>
                                                         </th>
                                                         <th scope="col">
-                                                            성명<br/>생년월일
+                                                            번호
                                                         </th>
-                                                        <th scope="col">휴대폰 번호</th>
-                                                        <th scope="col">밴드/배급/진료/퇴소</th>
+                                                        <th scope="col">진료내용</th>
+                                                        <th scope="col">진료일시</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>1</td>
                                                         <td>
-                                                            <span class="name">홍길동</span>
-                                                            <span class="name">1991.01.01</span>
-                                                        </td>
-                                                        <td>
-                                                            010-1234-5678
-                                                        </td>
-                                                        <td>
-                                                            <div class="btn-wrap d-flex flex-wrap">
-                                                                <button type="button" class="btn btn--sky">밴드</button>
-                                                                <button type="button" class="btn btn--orange">배급</button>
-                                                                <button type="button" class="btn btn--green">진료</button>
-                                                                <button type="button" class="btn btn--lightGray popOpen" data-id="pop_moveOut">퇴소</button>
+                                                            <div class="form-block">
+                                                                <form action="">
+                                                                    <label for="">
+                                                                        <input type="checkbox" name="" id="">
+                                                                    </label>
+                                                                </form>
                                                             </div>
+                                                        </td>
+                                                        <td>
+                                                            1
+                                                        </td>
+                                                        <td>방사능</td>
+                                                        <td>
+                                                            2022.09.29 12:10:14
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-block">
+                                                                <form action="">
+                                                                    <label for="">
+                                                                        <input type="checkbox" name="" id="">
+                                                                    </label>
+                                                                </form>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            2
+                                                        </td>
+                                                        <td>방사능</td>
+                                                        <td>
+                                                            2022.09.29 12:10:14
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-block">
+                                                                <form action="">
+                                                                    <label for="">
+                                                                        <input type="checkbox" name="" id="">
+                                                                    </label>
+                                                                </form>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            3
+                                                        </td>
+                                                        <td>방사능외</td>
+                                                        <td>
+                                                            2022.09.29 12:10:14
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-block">
+                                                                <form action="">
+                                                                    <label for="">
+                                                                        <input type="checkbox" name="" id="">
+                                                                    </label>
+                                                                </form>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            4
+                                                        </td>
+                                                        <td>방사능외</td>
+                                                        <td>
+                                                            2022.09.29 12:10:14
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-block">
+                                                                <form action="">
+                                                                    <label for="">
+                                                                        <input type="checkbox" name="" id="">
+                                                                    </label>
+                                                                </form>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            5
+                                                        </td>
+                                                        <td>방사능외</td>
+                                                        <td>
+                                                            2022.09.29 12:10:14
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-block">
+                                                                <form action="">
+                                                                    <label for="">
+                                                                        <input type="checkbox" name="" id="">
+                                                                    </label>
+                                                                </form>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            6
+                                                        </td>
+                                                        <td>방사능외</td>
+                                                        <td>
+                                                            2022.09.29 12:10:14
                                                         </td>
                                                     </tr>
                                                     
@@ -147,6 +241,44 @@
                 </div>
             </div>
 
+            <div class="popup" id="pop_medicalAdmit">
+                <div class="popup__inner">
+                    <div class="popup-cont">
+                        <div class="popup-cont__inner">
+                            <p class="popup-txt">
+                                치료구분
+                            </p>
+                            <div class="form-block">
+                                <form action="">
+                                    <label for="" class="form-block__label">
+                                        <select name="" id="" class="form-block__select">
+                                            <option value="">방사능</option>
+                                            <option value="">방사능1</option>
+                                            <option value="">방사능2</option>
+                                        </select>
+                                    </label>
+                                </form>
+                            </div>
+                            <p class="popup-txt">
+                                진료내용
+                            </p>
+                            <div class="form-block">
+                                <form action="">
+                                    <label for="" class="form-block__label">
+                                        <textarea name="" id="" class="form-block__textarea"></textarea>
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-footer">
+                        <div class="popup-footer__inner d-flex">
+                            <button type="button" class="popup-footer__btn btn--navy">등록</button>
+                            <button type="button" class="popup-footer__btn pop-close">닫기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="pop-overlay"></div>
         </div>
     </div>
@@ -158,6 +290,6 @@
     <script src="../resource/lib/datetimepicker/bootstrap-datetimepicker.min.js"></script>
     <script src="../resource/lib/simplebar/simplebar.min.js"></script>
     <script src="../resource/js/common.js"></script>
-    <script src="../resource/js/main.js"></script>
+    <script src="../resource/js/sub.js"></script>
 </body>
 </html>

@@ -52,23 +52,23 @@
   border-top: none;
 }
 .table-st th, .table-st td {
+  padding: 1.4rem 0;
   font-size: 1.2rem;
   font-weight: 400;
   color: #000;
   vertical-align: middle;
 }
 .table-st th {
-  padding: 0.5rem 0;
   background-color: #ECF4FB;
   border-left: 1px solid #eee;
   border-top: 1px solid #000;
   line-height: 1.3;
+  font-weight: 500;
 }
 .table-st th:first-child {
   border-left: none;
 }
 .table-st td {
-  padding: 0.5rem;
   border: 1px solid #eee;
   font-size: 1.2rem;
   color: #555;

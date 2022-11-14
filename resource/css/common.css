@@ -108,6 +108,12 @@ html, body, .wrap, .container {
   line-height: 1.5;
   text-align: center;
 }
+.popup-txt + .form-block {
+  margin-top: 0.7rem;
+}
+.popup-txt + .form-block + .popup-txt {
+  margin-top: 1.5rem;
+}
 .popup-footer__btn {
   width: 100%;
   height: 5rem;
